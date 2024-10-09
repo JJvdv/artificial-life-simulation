@@ -5,7 +5,7 @@ import math
 
 WINDOW_SIZE = 600
 
-#############################################################################################################
+#################################################################################################################################
 # Critter class
 # Attributes:
 # - color: The group the critter belongs to (Red, Yellow, Blue)
@@ -13,10 +13,10 @@ WINDOW_SIZE = 600
 # - speed: how fast the critter moves
 # - health: The amount of health each critter has, the critter dies when health is 0 or less
 # - damage: The damage delt to other critters when they are attacking each other.
-# - velocity: How far the critters move from their current position to another position in the simulation.
+# - velocity: Change the direction the critter is currently moving towards the direction of the critter that needs to be attacked
 # - low_health: A threshold for critters to rather search for healing plants than attack.
 # - kills: The amount of kills a critter has.
-############################################################################################################
+##################################################################################################################################
 class Critter:
     def __init__(self, color, position, speed = 10, health = 1000, damage = 10):
         self.color = color
