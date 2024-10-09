@@ -99,7 +99,7 @@ class Critter:
     
     # Function to search for the closest healing plants if the low_health threshold is reached        
     def searchForClosestPlant(self, plants):
-        if self.health <= self.low_health and self.heal_cooldown == 0:
+        if self.health <= self.low_health:
             closest_plant = None
             closest_distance = float('inf')
             
